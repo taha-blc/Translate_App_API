@@ -50,7 +50,7 @@ button.addEventListener("click", () => {
     /* I got which language the user wanted to translate */
     translateTo = secim[1].value
     if (!text) return;
-    ceviri.setAttribute("placeholder", "TRABSLATİNG...")
+    ceviri.setAttribute("placeholder", "Please Wait...")
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateForm}|${translateTo}`
     /* Using fetch, I assign the information from the api address to the data. */
     fetch(apiUrl).then(res => res.json()).then(data => {
