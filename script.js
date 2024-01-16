@@ -94,4 +94,9 @@ cevirisesi.addEventListener("click", ({ target }) => {
 })
 
 
-/* https://mymemory.translated.net/doc/spec.php */
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert('You cannot access the codes of the project this way :)')
+});
+
+
